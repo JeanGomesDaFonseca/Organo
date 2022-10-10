@@ -19,6 +19,10 @@ const Formulario = (props) => {
       imagem,
       time
     })
+    setNome('')
+    setCargo('')
+    setImagem('')
+    setTime('')
   };
 
   return (
@@ -45,6 +49,7 @@ const Formulario = (props) => {
           valor={imagem}
           aoAlterado={valor => setImagem(valor)}
         />
+        {/* <input type="file"/> */}
         <ListaSuspensa
           obrigatorio={true}
           label="Time"
